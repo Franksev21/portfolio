@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francisco Severino | Senior Fullstack Developer</title>
+    <meta name="description" content="Senior Fullstack Developer specialized in Java, Spring Boot, React and Flutter. Over 3.5 years of experience in telecommunications, healthcare, and technical services.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">FS<span class="logo-dot">.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#sobre-mi">About Me</a></li>
+                <li><a href="#experiencia">Experience</a></li>
+                <li><a href="#proyectos">Projects</a></li>
+                <li><a href="#habilidades">Skills</a></li>
+                <li class="lang-toggle">
+                    <a href="index.html" class="lang-btn" title="Cambiar a Español">
+                        <span class="lang-flag">🇩🇴</span>
+                        <span class="lang-text">Español</span>
+                    </a>
+                    <span class="lang-tooltip">Switch language</span>
+                </li>
+                <li><a href="#contacto" class="btn-nav">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero" id="inicio">
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="hero-content reveal">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Disponible para proyectos
+            </div>
+            <h1>
+                Hi, I'm <span class="gradient-text">Francisco Severino</span>
+            </h1>
+            <h2 class="hero-subtitle">Senior Fullstack Developer</h2>
+            <p class="hero-desc">
+                Over <strong>3.5 years</strong> building enterprise portals, mobile apps, and corporate solutions
+                in telecommunications, healthcare, and technical services. Expert in
+                <strong>Java · Spring Boot · React · Flutter</strong>.
+            </p>
+            <div class="hero-cta">
+                <a href="#experiencia" class="btn-primary">View My Experience</a>
+                <a href="#contacto" class="btn-ghost">Let's talk →</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num">3.5+</span>
+                    <span class="stat-label">Years of exp.</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num">4+</span>
+                    <span class="stat-label">Companies</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num">3</span>
+                    <span class="stat-label">Industries</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="section about-section">
+        <div class="container">
+            <div class="about-grid reveal">
+                <div class="about-text">
+                    <span class="section-tag">// about me</span>
+                    <h2 class="section-title">Building solutions<br>that matter</h2>
+                    <p>
+                        I am a Fullstack Developer with deep expertise in backend architectures with 
+                        <strong>Java/Spring Boot</strong> and modern frontend development with <strong>React/Next.js</strong>, 
+                        complemented by experience in cross-platform mobile apps with <strong>Flutter</strong>.
+                    </p>
+                    <p>
+                        I have worked on frontend teams, made critical technical decisions, and delivered scalable systems from concept to production. I am passionate about <strong>clean code</strong>,
+                        best practices, and the use of <strong>AI</strong> to accelerate development.
+                    </p>
+                    <div class="about-links">
+                        <a href="https://linkedin.com/in/ing-francisco-severino" target="_blank" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/Franksev21" target="_blank" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="profile-card glass-card">
+                        <div class="profile-img-wrapper">
+                            <img src="profile.jpg" alt="Francisco Severino" class="profile-img">
+                            <div class="profile-badge-online"></div>
+                        </div>
+                        <h3 class="profile-name">Francisco Severino</h3>
+                        <p class="profile-role">Senior Fullstack Developer</p>
+                        <p class="profile-location">📍 Santo Domingo, DR</p>
+                        <div class="profile-chips">
+                            <span class="profile-chip">Java</span>
+                            <span class="profile-chip">Spring Boot</span>
+                            <span class="profile-chip">React</span>
+                            <span class="profile-chip">Flutter</span>
+                            <span class="profile-chip">Next.js</span>
+                            <span class="profile-chip">Firebase</span>
+                            <span class="profile-chip">AWS</span>
+                            <span class="profile-chip">Google Cloud</span>
+                            <span class="profile-chip ai-chip">Claude AI</span>
+                            <span class="profile-chip ai-chip">GPT-4o</span>
+                            <span class="profile-chip ai-chip">Gemini</span>
+                            <span class="profile-chip ai-chip">LangChain</span>
+                            <span class="profile-chip ai-chip">RAG</span>
+                            <span class="profile-chip ai-chip">MCP</span>
+                            <span class="profile-chip ai-chip">AI Agents</span>
+                            <span class="profile-chip ai-chip">N8N</span>
+                            <span class="profile-chip ai-chip">Prompt Engineering</span>
+                            <span class="profile-chip ai-chip">Embeddings</span>
+                            <span class="profile-chip ai-chip">Vector DBs</span>
+                        </div>
+                    </div>
+                    <div class="code-card glass-card">
+                        <div class="code-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="code-filename">francisco.ts</span>
+                        </div>
+                        <pre class="code-body"><code><span class="code-key">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-str">"Francisco Severino"</span>,
+  <span class="code-prop">role</span>: <span class="code-str">"Fullstack Sr."</span>,
+  <span class="code-prop">location</span>: <span class="code-str">"Santo Domingo, RD"</span>,
+  <span class="code-prop">backend</span>: [<span class="code-str">"Java"</span>, <span class="code-str">"Spring Boot"</span>],
+  <span class="code-prop">frontend</span>: [<span class="code-str">"React"</span>, <span class="code-str">"Next.js"</span>],
+  <span class="code-prop">mobile</span>: [<span class="code-str">"Flutter"</span>, <span class="code-str">"Dart"</span>],
+  <span class="code-prop">cloud</span>: [<span class="code-str">"AWS"</span>, <span class="code-str">"Google Cloud"</span>, <span class="code-str">"Firebase"</span>],
+  <span class="code-prop">ai</span>: [
+    <span class="code-str">"Claude AI"</span>, <span class="code-str">"GPT-4o"</span>,
+    <span class="code-str">"LangChain"</span>, <span class="code-str">"RAG"</span>,
+    <span class="code-str">"MCP"</span>, <span class="code-str">"AI Agents"</span>,
+    <span class="code-str">"N8N"</span>,
+  ],
+  <span class="code-prop">openToWork</span>: <span class="code-bool">true</span>,
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experiencia" class="section alt-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">// experience</span>
+                <h2 class="section-title">Professional Journey</h2>
+            </div>
+            <div class="timeline reveal">
+
+                <!-- CSC Company -->
+                <div class="timeline-item">
+                    <div class="timeline-marker current"></div>
+                    <div class="timeline-body glass-card">
+                        <div class="job-header">
+                            <div>
+                                <h3>Senior Fullstack Mobile Developer</h3>
+                                <h4 class="company-name">CSC Company <span class="tag-freelance">Freelance</span></h4>
+                            </div>
+                            <div class="job-meta">
+                                <span class="date-badge current-badge">May 2025 – Present</span>
+                                <span class="location">🌐 Remote, DR</span>
+                            </div>
+                        </div>
+                        <ul class="job-bullets">
+                            <li>Designed and built a cross-platform mobile app from scratch for technicians, clients, and administrators following <strong>Clean Architecture</strong> principles.</li>
+                            <li>Implemented authentication with <strong>Firebase</strong>, multi-role management, and real-time data synchronization.</li>
+                            <li>Refactored legacy code by introducing design patterns, improving maintainability.</li>
+                        </ul>
+                        <div class="job-achievement">
+                            <span class="achievement-icon">🏆</span>
+                            <span>Optimized field technician workflows and enabled real-time request tracking for clients.</span>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Flutter</span>
+                            <span class="tech-badge">Dart</span>
+                            <span class="tech-badge">Firebase</span>
+                            <span class="tech-badge">Firestore</span>
+                            <span class="tech-badge">iOS/Android</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- XpertCode Fullstack -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-body glass-card">
+                        <div class="job-header">
+                            <div>
+                                <h3>Desarrollador Fullstack</h3>
+                                <h4 class="company-name">XpertCode Software Factory</h4>
+                            </div>
+                            <div class="job-meta">
+                                <span class="date-badge">Dic 2024 – Mayo 2025</span>
+                                <span class="location">📍 Santo Domingo, DR</span>
+                            </div>
+                        </div>
+                        <ul class="job-bullets">
+                            <li>Led the frontend team in building a <strong>monorepo with 3 interconnected applications</strong> for a dental clinic (appointments, patient records, administration).</li>
+                            <li>Oversaw planning, technical decision-making, and code reviews.</li>
+                            <li>Collaborated directly with stakeholders to align requirements with business objectives.</li>
+                        </ul>
+                        <div class="job-achievement">
+                            <span class="achievement-icon">🏆</span>
+                            <span>Successfully led the delivery of a monorepo with 3 apps in production as part of a complete digital transformation.</span>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Next.js</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">Jenkins</span>
+                            <span class="tech-badge">Google Cloud</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- XpertCode Backend -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-body glass-card">
+                        <div class="job-header">
+                            <div>
+                                <h3>Semi-Senior Java Backend Developer</h3>
+                                <h4 class="company-name">XpertCode Software Factory</h4>
+                            </div>
+                            <div class="job-meta">
+                                <span class="date-badge">Jul 2024 – Mar 2025</span>
+                                <span class="location">📍 Santo Domingo, DR</span>
+                            </div>
+                        </div>
+                        <ul class="job-bullets">
+                            <li>Implemented backend services and API integrations for the company's flagship mobile app with a <strong>global user base</strong>.</li>
+                            <li>Built a robust <strong>JAX-RS</strong> architecture with high availability under heavy traffic.</li>
+                            <li>Developed RESTful APIs consumed by the frontend team under strict quality standards.</li>
+                        </ul>
+                        <div class="job-achievement">
+                            <span class="achievement-icon">🏆</span>
+                            <span>Scalable backend architecture for a high-demand app used globally.</span>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Java</span>
+                            <span class="tech-badge">JAX-RS</span>
+                            <span class="tech-badge">SQL</span>
+                            <span class="tech-badge">WebLogic</span>
+                            <span class="tech-badge">APIGEE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- XpertCode Telecomunicaciones -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-body glass-card">
+                        <div class="job-header">
+                            <div>
+                                <h3>Desarrollador Fullstack</h3>
+                                <h4 class="company-name">XpertCode Software Factory</h4>
+                            </div>
+                            <div class="job-meta">
+                                <span class="date-badge">Dic 2023 – Jun 2024</span>
+                                <span class="location">📍 Santo Domingo, DR</span>
+                            </div>
+                        </div>
+                        <ul class="job-bullets">
+                            <li>Maintained and improved a customer service portal for a <strong>major telecommunications company</strong>.</li>
+                            <li>Developed plan cancellation modules and process automation not previously available in the portal.</li>
+                            <li>Applied clean code principles to ensure long-term maintainability.</li>
+                        </ul>
+                        <div class="job-achievement">
+                            <span class="achievement-icon">🏆</span>
+                            <span>Reducí fricción en tareas diarias de empleados y mejoré la experiencia general de atención al cliente.</span>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Java</span>
+                            <span class="tech-badge">JSF</span>
+                            <span class="tech-badge">Spring Boot</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">jQuery</span>
+                            <span class="tech-badge">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos / Clientes Individuales -->
+    <section id="proyectos" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">// featured projects</span>
+                <h2 class="section-title">Solutions I Have Built</h2>
+            </div>
+            <div class="projects-grid reveal">
+
+                <div class="project-card glass-card featured">
+                    <div class="project-top">
+                        <span class="project-icon">🐼</span>
+                        <div class="project-links">
+                            <span class="project-type">Mobile + Web App</span>
+                        </div>
+                    </div>
+                    <div class="project-screenshot-wrapper">
+                        <img src="panda-app.jpg" alt="PANDA MT - App de Mantenimiento Técnico" class="project-screenshot">
+                    </div>
+                    <h3>PANDA MT — Technical Maintenance Management</h3>
+                    <p>Complete platform (mobile app + web dashboard) for technical maintenance management. Allows administrators, technicians, and clients to coordinate services, track tasks, manage equipment, and visualize real-time metrics.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Flutter</span>
+                        <span class="tech-badge">Firebase</span>
+                        <span class="tech-badge">Dart</span>
+                        <span class="tech-badge">Dashboard Web</span>
+                    </div>
+                    <div class="project-impact">
+                        <span class="impact-label">Impacto:</span> Total operational visibility — technicians, clients, and admin on a single platform
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-top">
+                        <span class="project-icon">🏥</span>
+                        <div class="project-links">
+                            <span class="project-type">Web App</span>
+                        </div>
+                    </div>
+                    <h3>Dental Clinic Management System</h3>
+                    <p>Fullstack application for appointment scheduling, patient records, and administrative workflows. Monorepo with 3 interconnected applications with a complex UI.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Next.js</span>
+                        <span class="tech-badge">TypeScript</span>
+                    </div>
+                    <div class="project-impact">
+                        <span class="impact-label">Impacto:</span> Complete digital transformation for the client
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-top">
+                        <span class="project-icon">📡</span>
+                        <div class="project-links">
+                            <span class="project-type">Enterprise Portal</span>
+                        </div>
+                    </div>
+                    <h3>Telco Customer Service Portal</h3>
+                    <p>Enterprise portal for a telecommunications company with cancellation modules, process automation, and continuous improvement of the user experience.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">Spring Boot</span>
+                        <span class="tech-badge">JSF</span>
+                    </div>
+                    <div class="project-impact">
+                        <span class="impact-label">Impacto:</span> Reduction of operational friction in daily tasks
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Clientes Individuales -->
+            <div class="section-header reveal" style="margin-top: 5rem;">
+                <span class="section-tag">// individual clients</span>
+                <h2 class="section-title">Client Websites</h2>
+                <p style="color: var(--text-muted); max-width: 500px; margin: 0.5rem auto 0; font-size: 0.95rem;">
+                    Freelance projects — design, development, and end-to-end deployment.
+                </p>
+            </div>
+            <div class="projects-grid reveal">
+
+                <!-- Kustomizate -->
+                <div class="project-card glass-card featured client-card">
+                    <div class="project-top">
+                        <span class="project-icon">🎨</span>
+                        <div class="project-links">
+                            <span class="project-type client-type">Freelance · E-commerce</span>
+                        </div>
+                    </div>
+                    <h3>Kustomizate</h3>
+                    <p>Complete website for a custom sublimation and decoration store. Landing page with product catalog (mugs, tumblers, frames, gift boxes), visual gallery, customer testimonials, ordering process, and direct WhatsApp contact.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Vercel</span>
+                    </div>
+                    <div class="project-impact">
+                        <span class="impact-label">Delivered:</span> Professional landing page ready for production with integrated WhatsApp sales channel
+                    </div>
+                </div>
+
+                <!-- Reimy Marte Balbuena -->
+                <div class="project-card glass-card client-card">
+                    <div class="project-top">
+                        <span class="project-icon">🎬</span>
+                        <div class="project-links">
+                            <span class="project-type client-type">Freelance · Portfolio</span>
+                        </div>
+                    </div>
+                    <h3>Reimy Marte — Video Editor</h3>
+                    <p>High-impact professional portfolio for a video editor. Dark cinematic design with advanced CSS animations, work gallery, services section, and contact. Optimized to attract clients from brands and content creators.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">Animaciones</span>
+                        <span class="tech-badge">Vercel</span>
+                    </div>
+                    <div class="project-impact">
+                        <span class="impact-label">Delivered:</span> High-impact visual portfolio deployed and ready to present to clients
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="section alt-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">// tech stack</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+
+            <!-- Banner IA destacado -->
+            <div class="ai-banner reveal">
+                <div class="ai-banner-glow"></div>
+                <div class="ai-banner-content">
+                    <div class="ai-banner-left">
+                        <span class="ai-banner-tag">🔥 Trending · 2025-2026</span>
+                        <h3>AI-Powered Development</h3>
+                        <p>I integrate LLM models, autonomous agents, and cutting-edge AI tools directly into the development cycle — from design to production.</p>
+                    </div>
+                    <div class="ai-pills">
+                        <span class="ai-pill">Claude AI</span>
+                        <span class="ai-pill">GPT-4o</span>
+                        <span class="ai-pill">Gemini</span>
+                        <span class="ai-pill">LangChain</span>
+                        <span class="ai-pill">RAG</span>
+                        <span class="ai-pill">Prompt Engineering</span>
+                        <span class="ai-pill">AI Agents</span>
+                        <span class="ai-pill">MCP</span>
+                        <span class="ai-pill">N8N</span>
+                        <span class="ai-pill">Vercel AI SDK</span>
+                        <span class="ai-pill">OpenAI API</span>
+                        <span class="ai-pill">Embeddings</span>
+                        <span class="ai-pill">Vector DBs</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="skills-grid reveal">
+                <div class="skill-group glass-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Java & Spring Boot</li>
+                        <li>JAX-RS & RESTful APIs</li>
+                        <li>GraphQL</li>
+                        <li>Python & FastAPI</li>
+                        <li>C# & .NET</li>
+                        <li>WebLogic & APIGEE</li>
+                    </ul>
+                </div>
+                <div class="skill-group glass-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>React & Next.js</li>
+                        <li>TypeScript & JavaScript</li>
+                        <li>HTML, CSS, SCSS</li>
+                        <li>Bootstrap</li>
+                        <li>NGRX & RxJs</li>
+                        <li>JSF & jQuery</li>
+                    </ul>
+                </div>
+                <div class="skill-group glass-card">
+                    <div class="skill-icon">📱</div>
+                    <h3>Mobile</h3>
+                    <ul>
+                        <li>Flutter & Dart</li>
+                        <li>iOS and Android Apps</li>
+                        <li>Firebase & Firestore</li>
+                        <li>Clean Architecture</li>
+                        <li>Multi-role Auth</li>
+                        <li>Real-time sync</li>
+                    </ul>
+                </div>
+                <div class="skill-group glass-card">
+                    <div class="skill-icon">🚀</div>
+                    <h3>DevOps & Cloud</h3>
+                    <ul>
+                        <li>AWS (Amazon Web Services)</li>
+                        <li>Google Cloud Platform</li>
+                        <li>Firebase Cloud Services</li>
+                        <li>Docker</li>
+                        <li>Jenkins CI/CD</li>
+                        <li>Git, GitHub, GitLab</li>
+                    </ul>
+                </div>
+                <div class="skill-group glass-card">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>Databases</h3>
+                    <ul>
+                        <li>SQL & PostgreSQL</li>
+                        <li>Firebase / Firestore</li>
+                        <li>Schema design</li>
+                        <li>Vector Databases</li>
+                        <li>Pinecone / Supabase</li>
+                    </ul>
+                </div>
+                <div class="skill-group glass-card">
+                    <div class="skill-icon">🤖</div>
+                    <h3>IA & LLMs</h3>
+                    <ul>
+                        <li>Claude AI (Anthropic)</li>
+                        <li>GPT-4o / OpenAI API</li>
+                        <li>Google Gemini</li>
+                        <li>Prompt Engineering</li>
+                        <li>RAG (Retrieval Augmented)</li>
+                        <li>AI Agents & MCP</li>
+                        <li>N8N (AI Automation)</li>
+                        <li>LangChain / LangGraph</li>
+                        <li>Vercel AI SDK</li>
+                        <li>Embeddings</li>
+                        <li>AI-Assisted Development</li>
+                    </ul>
+                </div>
+                <div class="skill-group glass-card">
+                    <div class="skill-icon">🧠</div>
+                    <h3>Methodologies</h3>
+                    <ul>
+                        <li>Agile / Scrum</li>
+                        <li>Clean Code</li>
+                        <li>Design Patterns</li>
+                        <li>Clean Architecture</li>
+                        <li>Team Leadership</li>
+                        <li>Code Review</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educación & Certificaciones -->
+    <section class="section edu-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">// education</span>
+                <h2 class="section-title">Educación & Certificaciones</h2>
+            </div>
+            <div class="edu-grid reveal">
+                <div class="edu-card glass-card">
+                    <div class="edu-icon">🎓</div>
+                    <div class="edu-info">
+                        <h3>Systems Engineering <span class="edu-status">In Progress</span></h3>
+                        <p>Universidad O&M — Santo Domingo, RD</p>
+                        <span class="date-badge">2018 – 2026</span>
+                    </div>
+                </div>
+                <div class="edu-card glass-card">
+                    <div class="edu-icon">🎓</div>
+                    <div class="edu-info">
+                        <h3>Technical High School Diploma in Computer Science</h3>
+                        <p>CENTU — Santo Domingo, DR</p>
+                        <span class="date-badge">2010 – 2012</span>
+                    </div>
+                </div>
+                <div class="edu-card glass-card">
+                    <div class="edu-icon">📜</div>
+                    <div class="edu-info">
+                        <h3>Algorithms and Data Structures in Java</h3>
+                        <p>Professional Certification</p>
+                        <span class="date-badge">2024</span>
+                    </div>
+                </div>
+                <div class="edu-card glass-card">
+                    <div class="edu-icon">📜</div>
+                    <div class="edu-info">
+                        <h3><a href="https://verify.skilljar.com/c/d8xg8qydrb38" target="_blank" style="color: inherit; text-decoration: none;">Claude 101 <span style="font-size: 0.8rem; margin-left: 5px;">🔗</span></a></h3>
+                        <p>Anthropic</p>
+                        <span class="date-badge">2024</span>
+                    </div>
+                </div>
+                <div class="edu-card glass-card">
+                    <div class="edu-icon">🌐</div>
+                    <div class="edu-info">
+                        <h3>Advanced English Immersion</h3>
+                        <p>APEC University — Graduated</p>
+                        <span class="date-badge">2018</span>
+                    </div>
+                </div>
+            </div>
+            <div class="languages reveal">
+                <span class="lang-chip">🇩🇴 Spanish — Native</span>
+                <span class="lang-chip">🇺🇸 English — Advanced</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <footer id="contacto" class="section contact-section">
+        <div class="hero-bg">
+            <div class="blob blob-1" style="opacity:0.2"></div>
+            <div class="blob blob-2" style="opacity:0.2"></div>
+        </div>
+        <div class="container reveal">
+            <span class="section-tag">// contact</span>
+            <h2 class="section-title contact-title">Do you have a project in mind?</h2>
+            <p class="contact-desc">
+                I am available for freelance projects, full-time positions, and technical collaborations.
+                Let's talk and build something amazing together!
+            </p>
+            <div class="contact-grid">
+                <a href="mailto:fseverino0221@gmail.com" class="contact-card glass-card">
+                    <span class="contact-icon">✉️</span>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">fseverino0221@gmail.com</span>
+                </a>
+                <a href="tel:+18299786503" class="contact-card glass-card">
+                    <span class="contact-icon">📞</span>
+                    <span class="contact-label">Phone / WhatsApp</span>
+                    <span class="contact-value">+1 829-978-6503</span>
+                </a>
+                <a href="https://linkedin.com/in/ing-francisco-severino" target="_blank" class="contact-card glass-card">
+                    <span class="contact-icon">💼</span>
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">ing-francisco-severino</span>
+                </a>
+                <a href="https://github.com/Franksev21" target="_blank" class="contact-card glass-card">
+                    <span class="contact-icon">💻</span>
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">Franksev21</span>
+                </a>
+            </div>
+            <p class="copyright">© 2026 Francisco Severino · Developed with 💙 in Santo Domingo, DR</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

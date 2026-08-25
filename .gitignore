@@ -1,0 +1,5 @@
+.vercel
+translate.py
+*.pyc
+__pycache__/
+.DS_Store
