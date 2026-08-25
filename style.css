@@ -161,7 +161,7 @@ ul { list-style: none; }
 }
 .btn-nav:hover { box-shadow: 0 4px 20px rgba(59,130,246,0.5); transform: translateY(-1px); }
 .btn-nav::after { display: none !important; }
-.nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+.nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; z-index: 1100; position: relative; }
 .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--text-dim); border-radius: 2px; transition: all 0.3s ease; }
 
 /* ─── HERO ────────────────────────────────────── */
@@ -761,22 +761,38 @@ code { font-family: var(--font-code); line-height: 1.9; display: block; }
 @media (max-width: 768px) {
     .container { padding: 0 1.2rem; }
     .section { padding: 4rem 0; }
-    
-    .nav-links { display: none; position: fixed; inset: 0; top: 65px; background: rgba(15, 22, 41, 0.98); flex-direction: column; align-items: center; justify-content: center; gap: 2.5rem; }
+
+    /* ── MOBILE NAV ── */
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        padding-top: 80px;
+        background: rgba(10, 15, 35, 0.99);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+        z-index: 999;
+    }
     .nav-links.open { display: flex; }
-    .nav-links a { font-size: 1.2rem; }
-    .nav-toggle { display: flex; }
-    
+    .nav-links a { font-size: 1.3rem; }
+    /* Hide blinking tooltip on mobile nav */
+    .lang-tooltip { display: none; }
+    /* Show lang btn inline in mobile menu */
+    .lang-toggle { flex-direction: row; }
+    .nav-toggle { display: flex; z-index: 1100; }
+
     .hero-title { font-size: 2.5rem; }
     .hero-stats { flex-direction: column; gap: 1rem; border-radius: 20px; }
     .stat-divider { width: 60px; height: 1px; }
-    
+
     .job-header { flex-direction: column; }
     .job-meta { text-align: left; }
     .timeline::before { left: 8px; }
     .timeline-item { padding-left: 36px; }
     .timeline-marker { left: 0; }
-    
+
     .ai-banner-content { grid-template-columns: 1fr; gap: 1.5rem; }
     .ai-banner { padding: 1.5rem; }
 }
