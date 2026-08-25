@@ -808,3 +808,4 @@ code { font-family: var(--font-code); line-height: 1.9; display: block; }
     
     .section-title { font-size: 1.8rem; }
 }
+.project-link-icon:hover { transform: translateY(-2px); color: var(--text) !important; }
