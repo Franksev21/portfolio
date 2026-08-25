@@ -765,8 +765,9 @@ code { font-family: var(--font-code); line-height: 1.9; display: block; }
     /* ── MOBILE NAV ── */
     .nav-links {
         display: none;
-        position: fixed;
-        top: 0; left: 0; right: 0; bottom: 0;
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 100vh;
         padding-top: 80px;
         background: rgba(10, 15, 35, 0.99);
         flex-direction: column;
